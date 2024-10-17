@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;    
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C7CEEA;
+    padding: 10px 20px;
+    height: 7vw;
+}
+
+.navbar h1{
+    font-family: "Qwitcher Grypen";
+    font-weight: 2000;
+    font-size: 10vh;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: -10vh;
+}
+
+.search-input{
+    height: 7vh;
+    width: 50vh;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 20vh;
+}
+
+.dropbtn {
+    background-color: #001F54;
+    color: #fff;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn i {
+    margin-left: 50px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+    min-width: 160px;
+    top: 100%;
+    list-style-type: none;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    list-style: none;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #f4f4f4;
+}
+
+.dropdown:hover .dropdown-content { 
+    display: block;
+}
+
+
+button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: none;
+    letter-spacing: 0.05em;
+    /* border-radius: 16px; */
+  }
+  
+ 
+  
+  .search-button:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+  }
+  
+  .search-button:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+
+.returns {
+    display: flex;
+    flex-direction: column;
+    /* text-align: right; */
+    margin-top: -10vh;
+    margin-left: 130vh; 
+    
+}
+
+.returns h3 {
+    margin: 0;
+    font-size: 5vh;
+}
+
+.returns span {
+    font-weight: 20%;
+    color: purple;
+}
+
+
+.cart {
+    display: flex;
+    align-items: center; 
+    height: 100px; 
+    margin-left: 164vh;
+    margin-top: -11vh;
+}
+
+.cart i {
+    font-size: 6vh;
+    color: black;
+}
+
+.login{
+    display: flex;
+    margin-left: 6vh;
+}
+
+.logout{
+    margin-left: 3vh;
+}
+
+.collections h2{
+    text-align:center;
+    margin-top: 20vh;
+}
+
+
+
+/* ** */
+
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 15px; /* Space between grid items */
+    
+}
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(230, 230, 250, 1);
+    flex: 0 1 calc(50% - 20px);
+    height: 70vh;
+}
+.product img {
+    margin-top: 2vh;
+    width: 150px; /* Set a uniform width */
+    height: 150px; /* Set a uniform height */
+    object-fit: contain;
+}
+
+.product:hover{
+    transform: scale(1.05);
+}
+
+
+                            /* *************************** */
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 auto;
+    margin-top: 8vh;
+}
+
+.skill-box {
+    flex: 0 1 calc(50% - 20px);
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(230, 230, 250, 1);
+    width: 45vw;
+}
+
+.skill-box img {
+    width: 30vw;
+    height: 40vw;
+    max-width: 100%;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.skill-box p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0, 34, 102, 1);
+    font-family: "Oswald", sans-serif;
+}
+
+.skill-box:hover {
+    transform: scale(1.05);
+}
+
+                        /* Footer*/
+footer {
+    background-color:black;
+    color: white;
+    padding: 20px 0;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.footer-top a {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom: 1px solid #3a4553;
+}
+
+.footer-column {
+    max-width: 200px;
+    text-align: left;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+    color: #ddd;
+    font-size: 16px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    color: #ddd;
+}
+
+.footer-social i {
+    margin-right: 10px;
+    color: white;
+
+}
+
+.footer-social i {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-legal a {
+    color: #999;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.footer-legal a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-top h2{
+    font-family:"Qwitcher Grypen", cursive;
+}

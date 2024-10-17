@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/men/men.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>YEAN</h1>
+    
+    
+        <div class="search-container"></div>
+            <div class="search-bar">
+              <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown()">Category <i class="fa-solid fa-chevron-down"></i></button>
+                <ul class="dropdown-content" id="categoryDropdown">
+                  <li><a href="/index.html">All</a></li>
+                  <li><a href="./men/men.html">Men</a></li>
+                  <li><a href="/jewelery/jewelery.html">Accessories</a></li>
+                  <li><a href="/women/women.html">Women</a></li>
+                  <li><a href="/electronics/elec.html">Electronics</a></li>
+                </ul>
+              </div>
+              <input type="text" placeholder="Search Amazon" class="search-input">
+              <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="returns">
+            <h3>Contact<span>Us</span></h3>
+        </div>
+        <div class="cart">
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a> <button class="login">LOGIN</button><button class="logout">LOGOUT</button>
+        </div>
+            
+    </div>
+    
+    <div class="products">
+        <div class="collections">
+            <h2>
+                Electronics Section
+            </h2>
+            <div id="product-list"></div>
+            
+    </div>
+
+    <footer>
+        <div class="footer-top">
+            <h2>YEAN</h2>
+        </div>
+    
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>Get to Know Us</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                    <li><a href="#">Yean Cares</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-column">
+                <h4>Make Money with Us</h4>
+                <ul>
+                    <li><a href="#">Sell on Yean</a></li>
+                    <li><a href="#">Yean Global Selling</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                    <li><a href="#">Fulfillment by Yean</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-column">
+                <h4>Yean Payment</h4>
+                <ul>
+                    <li><a href="#">Yean Pay</a></li>
+                    <li><a href="#">Credit Cards</a></li>
+                    <li><a href="#">EMI on Products</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-column">
+                <h4>Let Us Help You</h4>
+                <ul>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Returns Centre</a></li>
+                    <li><a href="#">100% Purchase Protection</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            
+            <div class="footer-legal">
+                <a href="#">Privacy Notice</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Cookies Notice</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+<script src="elec.js"></script>
+</html>
